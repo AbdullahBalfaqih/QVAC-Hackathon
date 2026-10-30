@@ -1,5 +1,7 @@
 # Evidence index
 
+[Play the narrated demo directly](https://cdn.jsdelivr.net/gh/AbdullahBalfaqih/QVAC-Hackathon@v0.1.0/evidence/Athar_Narrated_Demo.mp4). The same file is available in this repository.
+
 | File | Description |
 | --- | --- |
 | [`Athar_Narrated_Demo.mp4`](Athar_Narrated_Demo.mp4) | 106.84-second edit with an animated problem statement, AI-generated English female narration and the complete, unsped real inference. |

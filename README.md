@@ -10,7 +10,7 @@
 
 Athar is a local-first workspace for **reviewing attendance evidence**. It uses QVAC and a local language model to suggest day counts and supporting quotations from a passage. A person checks the source, assigns the meaning and decides what to record. After the initial setup, the core workflow does not need internet access.
 
-[Watch the narrated demo](evidence/Athar_Narrated_Demo.mp4) · [Offline proof](evidence/offline-proof.json) · [Quick start](#quick-start) · [Architecture](docs/ARCHITECTURE.md) · [Sources](docs/SOURCES.md) · [العربية](docs/README_AR.md)
+[Watch the narrated demo](https://cdn.jsdelivr.net/gh/AbdullahBalfaqih/QVAC-Hackathon@v0.1.0/evidence/Athar_Narrated_Demo.mp4) · [Offline proof](evidence/offline-proof.json) · [Quick start](#quick-start) · [Architecture](docs/ARCHITECTURE.md) · [Sources](docs/SOURCES.md) · [العربية](docs/README_AR.md)
 
 ![Athar dashboard showing four attributed published examples and the human-review workflow](docs/assets/dashboard.png)
 
@@ -33,7 +33,7 @@ Browser case storage and exported files are **unencrypted**. Use a trusted devic
 
 ## Demo and offline evidence
 
-The [narrated demo](evidence/Athar_Narrated_Demo.mp4) opens with the problem statement and then shows a real automated browser recording. The English voice-over is AI-generated; the opening graphics and captions were added after recording. The QVAC inference is retained **in full, without cuts or speed-up**.
+The [narrated demo](https://cdn.jsdelivr.net/gh/AbdullahBalfaqih/QVAC-Hackathon@v0.1.0/evidence/Athar_Narrated_Demo.mp4) opens with the problem statement and then shows a real automated browser recording. The English voice-over is AI-generated; the opening graphics and captions were added after recording. The QVAC inference is retained **in full, without cuts or speed-up**.
 
 On 30 October 2026, the Linux x64 test placed the browser, app server and QVAC worker in one network namespace with only loopback and no IPv4 routes. Live command outputs are displayed in a browser-rendered transcript before and after inference; an outbound TCP attempt returned `ENETUNREACH` both times. This proves isolation of the **app environment**, not that the host's Wi-Fi switch was off.
 
