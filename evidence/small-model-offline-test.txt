@@ -1,0 +1,26 @@
+Loading local model: /home/user/.cache/athar/download-test/Qwen2.5-0.5B-Instruct.Q4_K_M.gguf
+Loaded in ms: 2983
+{
+  "elapsedMs": 5560,
+  "raw": "{\"first\":{\"value\":4,\"quote\":\"four days\"},\"second\":{\"value\":9,\"quote\":\"nine days\"}}",
+  "checked": {
+    "candidates": [
+      {
+        "value": 9,
+        "quote": "nine days",
+        "position": 73,
+        "exactMatch": true,
+        "requiresReview": true
+      },
+      {
+        "value": 4,
+        "quote": "four days",
+        "position": 138,
+        "exactMatch": true,
+        "requiresReview": true
+      }
+    ],
+    "rejected": [],
+    "orderCorrected": true
+  }
+}

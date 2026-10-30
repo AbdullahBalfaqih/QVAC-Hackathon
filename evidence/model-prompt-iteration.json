@@ -1,0 +1,12 @@
+{
+  "description": "Recorded development observation; the text is the Article 14 published historical case. This is not a benchmark.",
+  "source": "https://tribe.article-14.com/post/nrega-workers-are-losing-wages-because-of-mandatory-app-attendance--62c39de7b5d3d",
+  "input": "While the physical copy of the muster roll recorded her presence for all nine days, her attendance online showed that she worked only for four days.",
+  "model": "QuantFactory/Qwen2.5-1.5B-Instruct.Q4_K_M.gguf",
+  "engine": "@qvac/sdk 0.22.0",
+  "initial_classifying_prompt_actual_output": {"worked":{"value":"4","quote":"she worked only for four days"},"recorded":{"value":"9","quote":"the physical copy of the muster roll recorded her presence for all nine days"}},
+  "observation": "The initial classifier inverted the relevant paper and online counts despite giving exact excerpts. Exact grounding alone did not guarantee correct meaning.",
+  "product_change": "The shipped prompt proposes first/second counts without deciding their category; the user must select a category after reviewing the full source text.",
+  "subsequent_neutral_prompt_actual_output": {"first":{"value":9,"quote":"nine days"},"second":{"value":4,"quote":"four days"}},
+  "caution": "This change does not eliminate errors, omissions, prompt injection, or the need for human review. No general accuracy is claimed."
+}

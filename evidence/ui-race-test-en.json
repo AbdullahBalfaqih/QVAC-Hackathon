@@ -1,0 +1,6 @@
+{
+  "test": "Switch to published Vikas case while a real QVAC request for published Lakshmi is in flight",
+  "http_status": 200,
+  "stale_candidates_shown": false,
+  "pass": true
+}

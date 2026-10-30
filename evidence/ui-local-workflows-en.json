@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "overview renders in English",
+    "records renders in English",
+    "assistant renders in English",
+    "report renders in English",
+    "method renders in English",
+    "Export contains the actual published counts and schema",
+    "Import creates a local copy without claiming independent verification",
+    "No horizontal overflow at 320px in all five views",
+    "No horizontal overflow at 375px in all five views",
+    "No horizontal overflow at 768px in all five views",
+    "No horizontal overflow at 1024px in all five views",
+    "No horizontal overflow at 1440px in all five views"
+  ],
+  "browser_errors": [],
+  "bad_responses": [],
+  "pass": true
+}

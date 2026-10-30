@@ -1,0 +1,15 @@
+# Dependencies and model weights are downloaded separately.
+node_modules/
+models/
+*.gguf
+.qvac/
+
+# Local data, environments and operating-system artifacts.
+private-data/
+.env
+.env.*
+!.env.example
+*.log
+__pycache__/
+.venv/
+.DS_Store

@@ -1,0 +1,203 @@
+{
+  "utc": "2026-10-30T12:56:47.205090+00:00",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.41",
+  "node": "v22.23.4",
+  "logical_cpus_available": 2,
+  "mem_total_kib": 2030404,
+  "model": "Qwen2.5-1.5B-Instruct.Q4_K_M.gguf",
+  "sdk": "@qvac/sdk 0.22.0",
+  "model_sha256": "0495b6ad92bab3420f870a001c0add99562d5eb878109ebe8e4cb8de99e0bed5",
+  "ipv4_routes": [],
+  "interfaces": [
+    {
+      "ifindex": 1,
+      "ifname": "lo",
+      "flags": [
+        "LOOPBACK",
+        "UP",
+        "LOWER_UP"
+      ],
+      "mtu": 65536,
+      "qdisc": "noqueue",
+      "operstate": "UNKNOWN",
+      "linkmode": "DEFAULT",
+      "group": "default",
+      "txqlen": 1000,
+      "link_type": "loopback",
+      "address": "00:00:00:00:00:00",
+      "broadcast": "00:00:00:00:00:00"
+    }
+  ],
+  "interface_names": [
+    "lo"
+  ],
+  "external_tcp_errno_before": 101,
+  "cpu_threads_for_inference": 2,
+  "network_namespace": {
+    "recorder": "net:[4026532093]",
+    "server": "net:[4026532093]",
+    "qvac_worker": "net:[4026532093]",
+    "browser": "net:[4026532093]",
+    "server_pid": 21497,
+    "qvac_worker_pid": 21535,
+    "browser_pid": 21568
+  },
+  "live_network_checks_before": [
+    {
+      "display": "readlink /proc/21497/ns/net  # app server",
+      "argv": [
+        "readlink",
+        "/proc/21497/ns/net"
+      ],
+      "stdout": "net:[4026532093]",
+      "exit_code": 0
+    },
+    {
+      "display": "readlink /proc/21535/ns/net  # QVAC worker",
+      "argv": [
+        "readlink",
+        "/proc/21535/ns/net"
+      ],
+      "stdout": "net:[4026532093]",
+      "exit_code": 0
+    },
+    {
+      "display": "readlink /proc/21568/ns/net  # browser",
+      "argv": [
+        "readlink",
+        "/proc/21568/ns/net"
+      ],
+      "stdout": "net:[4026532093]",
+      "exit_code": 0
+    },
+    {
+      "display": "ip -br link",
+      "argv": [
+        "ip",
+        "-br",
+        "link"
+      ],
+      "stdout": "lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> ",
+      "exit_code": 0
+    },
+    {
+      "display": "ip -4 route show",
+      "argv": [
+        "ip",
+        "-4",
+        "route",
+        "show"
+      ],
+      "stdout": "",
+      "exit_code": 0
+    },
+    {
+      "display": "/usr/local/bin/python -c 'import errno,socket; s=socket.socket(); s.settimeout(2); r=s.connect_ex((\"1.1.1.1\",443)); s.close(); print(errno.errorcode.get(r,\"UNKNOWN\"),r)'",
+      "argv": [
+        "/usr/local/bin/python",
+        "-c",
+        "import errno,socket; s=socket.socket(); s.settimeout(2); r=s.connect_ex((\"1.1.1.1\",443)); s.close(); print(errno.errorcode.get(r,\"UNKNOWN\"),r)"
+      ],
+      "stdout": "ENETUNREACH 101",
+      "exit_code": 0
+    }
+  ],
+  "external_tcp_errno_after": 101,
+  "live_network_checks_after": [
+    {
+      "display": "readlink /proc/21497/ns/net  # app server",
+      "argv": [
+        "readlink",
+        "/proc/21497/ns/net"
+      ],
+      "stdout": "net:[4026532093]",
+      "exit_code": 0
+    },
+    {
+      "display": "readlink /proc/21535/ns/net  # QVAC worker",
+      "argv": [
+        "readlink",
+        "/proc/21535/ns/net"
+      ],
+      "stdout": "net:[4026532093]",
+      "exit_code": 0
+    },
+    {
+      "display": "readlink /proc/21568/ns/net  # browser",
+      "argv": [
+        "readlink",
+        "/proc/21568/ns/net"
+      ],
+      "stdout": "net:[4026532093]",
+      "exit_code": 0
+    },
+    {
+      "display": "ip -br link",
+      "argv": [
+        "ip",
+        "-br",
+        "link"
+      ],
+      "stdout": "lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> ",
+      "exit_code": 0
+    },
+    {
+      "display": "ip -4 route show",
+      "argv": [
+        "ip",
+        "-4",
+        "route",
+        "show"
+      ],
+      "stdout": "",
+      "exit_code": 0
+    },
+    {
+      "display": "/usr/local/bin/python -c 'import errno,socket; s=socket.socket(); s.settimeout(2); r=s.connect_ex((\"1.1.1.1\",443)); s.close(); print(errno.errorcode.get(r,\"UNKNOWN\"),r)'",
+      "argv": [
+        "/usr/local/bin/python",
+        "-c",
+        "import errno,socket; s=socket.socket(); s.settimeout(2); r=s.connect_ex((\"1.1.1.1\",443)); s.close(); print(errno.errorcode.get(r,\"UNKNOWN\"),r)"
+      ],
+      "stdout": "ENETUNREACH 101",
+      "exit_code": 0
+    }
+  ],
+  "qvac_response": {
+    "candidates": [
+      {
+        "value": 9,
+        "quote": "nine days",
+        "position": 73,
+        "exactMatch": true,
+        "requiresReview": true
+      },
+      {
+        "value": 4,
+        "quote": "four days",
+        "position": 138,
+        "exactMatch": true,
+        "requiresReview": true
+      }
+    ],
+    "rejected": [],
+    "orderCorrected": false,
+    "elapsedMs": 36910,
+    "sourceLength": 148,
+    "engine": "@qvac/sdk 0.22.0",
+    "reviewRequired": true
+  },
+  "video_timeline_seconds": {
+    "network_before": 7.13,
+    "overview": 14.1,
+    "assistant": 19.37,
+    "inference_started": 22.56,
+    "result": 60.49,
+    "review": 65.56,
+    "records": 70.99,
+    "draft": 75.85,
+    "network_after": 80.59
+  },
+  "network_proof": "No IPv4 routes, loopback only, TCP connect returned ENETUNREACH before and after inference.",
+  "video_duration_observed_seconds": 88.67
+}
